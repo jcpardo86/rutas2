@@ -1,0 +1,18 @@
+<div class="container">
+    <section>
+    <div class="hero">
+        <div class="text-center">
+            <h1>Bienvenidos a nuestra empresa de desarrollo Web</h1>
+            <p>Ofrecemos servicio de desarrollo en grandes proyectos</p>
+            <!-- <a [routerLink]="['/servicios']" class="btn btn-secondary me-3">Nuestros servicios</a>
+            <button [routerLink]="['/contacto']" class="btn btn-warning">Contacto</button> -->
+            <form #suscribeForm="ngForm" (ngSubmit)="getSuscribe(suscribeForm)">
+                <div class="d-flex gap-2">
+                    <input type="text" class="form-control" placeholder="Rellena el campo aquí" name="email" ngModel (input)="validar($event)">
+                    <input type="submit" class="btn btn-danger" value="Suscríbete!" >
+                </div>
+            </form>
+        </div>
+    </div>
+    </section>
+</div>
