@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IServicio } from '../interface/iservicio.interface';
 import { SERVICIOS } from '../db/servicios.db';
-import { IProducto } from '../interface/iproducto.interface';
-import { PRODUCTOS } from '../db/productos.db';
 
 
 @Injectable({
@@ -11,8 +9,7 @@ import { PRODUCTOS } from '../db/productos.db';
 export class ServiciosService {
 
   private arrServicios: IServicio[] = SERVICIOS;
-  private arrProductos: IProducto[] = PRODUCTOS;
-
+  constructor() { }
   getAll(): IServicio[]{
     return this.arrServicios;
   }
@@ -21,7 +18,5 @@ export class ServiciosService {
     return this.arrServicios.find(servicio => servicio.url === url)
   }
 
-  GetAllProducts():IProducto[]{
-    return this.arrProductos;
-  }
+
 }

@@ -1,1 +1,14 @@
-<p>productos works!</p>
+<section class="container mt-3">
+    <h2>Nuestros productos</h2>
+    <hr>
+    <div class="row g-3">
+        @for(producto of productos; track producto.id){
+            <article class="col-12 col-md-md-6 col-lg-4">
+                <app-producto-card [miProducto]="producto"></app-producto-card>    
+            </article>  
+        }
+        @empty {
+            <p>No disponemos de stock en este momento</p>
+        }
+    </div>
+</section>

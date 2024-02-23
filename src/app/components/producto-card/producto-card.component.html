@@ -1,0 +1,15 @@
+<div class="card shadow border-1 border text-center p-3">
+    <h3>{{ miProducto.nombre }}</h3>
+    <h4>{{ miProducto.categoria }}</h4>
+    <div>
+        <img src="{{ miProducto.foto }}" alt="{{ miProducto.nombre }}" class="img-fluid">
+    </div>
+    <p>{{ miProducto.precio }}</p>
+    <ng-container *ngIf="miProducto.stock; else agotado">
+        <p class="text-primary">Disponible</p>
+    </ng-container>
+    <ng-template #agotado>
+        <p class="text-danger">¡Agotado!</p>
+    </ng-template>
+    <a class="btn btn-sm btn-danger" [routerLink]="['/producto', miProducto.id]">¡Cómpralo ya!</a>
+</div>
