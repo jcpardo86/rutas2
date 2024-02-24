@@ -1,5 +1,6 @@
-<section class="container mt-3">
+<section class="container mt-3 mb-5">
     <h2>Nuestros productos</h2>
+    <a class="btn btn-primary" [routerLink]="['productos-constock']">Filtrar con stock</a>
     <hr>
     <div class="row g-3">
         @for(producto of productos; track producto.id){

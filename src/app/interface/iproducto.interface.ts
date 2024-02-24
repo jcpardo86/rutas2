@@ -4,5 +4,6 @@ export interface IProducto {
     precio: number,
     stock: boolean,
     foto: string,
-    categoria: string
+    currency: string,
+    descripcion?: string
 }

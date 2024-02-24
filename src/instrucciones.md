@@ -16,3 +16,9 @@ Quiero pintar un listado de productos
                       - Cargar todos los productos de la lista que tenga stock
                         - Crear un product-card para cargar cada minuproducto con un enlace a la vista del producto. El producto solo cargar titulo y precio
             - Crear una pagina para la vista de producto donde cargaremos toda la info del producto incluida la imagen. (/producto/:id)
+
+
+
+
+            productList => Lista de productos con stock
+            productView => info del producto

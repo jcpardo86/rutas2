@@ -4,4 +4,5 @@ export interface IServicio {
     subtitle: string,
     description: string;
     url: string;
+    img?: string;
 }

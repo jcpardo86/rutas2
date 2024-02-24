@@ -1,1 +1,12 @@
-<p>producto-view works!</p>
+<section *ngIf="unProducto" class="container mt-3">
+    <h2>{{ unProducto.nombre }} - El producto {{ unProducto.id }}</h2>
+    <h4>{{ unProducto.precio | currency }}</h4>
+    <hr>
+    <p>{{ unProducto.currency }}</p>
+</section>
+
+<ng-template #loading>
+  <div class="container mt-3">
+    <p>Cargando detalles del producto...</p>
+  </div>
+</ng-template>

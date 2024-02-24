@@ -14,7 +14,7 @@ export class ProductosService {
     return this.arrProductos;
   }
 
-  getByUrl(id: number): IProducto | undefined {
+  getProductById(id: number): IProducto | undefined {
     return this.arrProductos.find(producto => producto.id === id)
   }
 }

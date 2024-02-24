@@ -7,9 +7,9 @@ import { SERVICIOS } from '../db/servicios.db';
   providedIn: 'root'
 })
 export class ServiciosService {
-
   private arrServicios: IServicio[] = SERVICIOS;
   constructor() { }
+  
   getAll(): IServicio[]{
     return this.arrServicios;
   }
